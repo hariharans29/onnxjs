@@ -6,7 +6,7 @@
   "browser": "./dist/onnx.min.js",
   "types": "./types/lib/api/index.d.ts",
   "scripts": {
-    "prepare": "tsc && node tools/build",
+    "prepare": "python --version && tsc && node tools/build",
     "prepack": "node tools/build --build-wasm --build-bundle",
     "build": "tsc && node tools/build --build-wasm --build-bundle",
     "build:clean": "tsc && node tools/build --clean-install --build-wasm --build-bundle",
